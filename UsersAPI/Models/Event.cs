@@ -2,6 +2,6 @@
 {
     public class Event
     {
-
+        public int Duration { get; set; }
     }
 }
