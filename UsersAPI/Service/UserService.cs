@@ -8,5 +8,11 @@ namespace UsersAPI.Service
             var repository = new UserRepository();
             repository.DeleteUser(userId);
         }
+
+        public void UpdateUser(string city, int id, string newCity)
+        {
+            var userRepository = new UserRepository();
+            userRepository.UpdateUser(city, id, newCity);
+        }
     }
 }

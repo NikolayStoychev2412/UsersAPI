@@ -16,5 +16,19 @@ namespace UsersAPI.Repository
                 }
             }
         }
+
+        public void UpdateUser(string city, int id, string newCity)
+        {
+            foreach (var user in Users)
+            {
+                if (user.City == city && user.Id == id)
+                {
+                    user.City = newCity;
+                    break;
+                }
+            }
+        }
+
+
     }
 }
