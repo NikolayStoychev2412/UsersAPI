@@ -14,5 +14,15 @@ namespace UsersAPI.Controllers
             service.DeleteUser(userId);
             return Ok();
         }
+
+        [HttpGet ("UpdateUser/City-{city}/ID-{id}")]
+
+        public ActionResult Get(string city, int id, string newCity)
+        {
+            var service = new Service.UserService();
+            service.UpdateUser(city, id, newCity);
+
+            return Ok();
+        }
     }
 }
