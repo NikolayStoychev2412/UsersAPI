@@ -15,9 +15,9 @@ namespace UsersAPI.Controllers
             return Ok();
         }
 
-        [HttpGet ("UpdateUser/City-{city}/ID-{id}")]
+        [HttpPut ("UpdateUser/City-{city}/ID-{id}")]
 
-        public ActionResult Get(string city, int id, string newCity)
+        public ActionResult Put(string city, int id, string newCity)
         {
             var service = new Service.UserService();
             service.UpdateUser(city, id, newCity);
