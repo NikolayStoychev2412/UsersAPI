@@ -10,7 +10,7 @@
 
         public string Content { get; set; }
 
-        public string Organizer { get; set; }
+        public string Description { get; set; }
 
         public string Organizer { get; set; }
 
