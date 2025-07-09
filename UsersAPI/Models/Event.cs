@@ -10,5 +10,6 @@
 
         public string Content { get; set; }
 
+        public string Organizer { get; set; }
     }
 }
