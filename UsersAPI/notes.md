@@ -1,17 +1,40 @@
 ﻿# HomeWork 2
-Create properties in Modesl/User.cs
+###Create properties in Modesl/User.cs
 
-Id - Angelina
-FirstName - Emil
-MiddleName - Lachezar 
-LastName - Lyubomir
-City - Angel 
-Street - Dimityr
-StrNumber - Ivan
-AreaCode - Nikolay
-Phone - Alex 
+- Id - Angelina
+- FirstName - Emil
+- MiddleName - Lachezar 
+- LastName - Lyubomir
+- City - Angel 
+- Street - Dimityr
+- StrNumber - Ivan
+- AreaCode - Nikolay
+- Phone - Alex 
+-----------------------------------------------------
+
+## Homework 3
+### Create properties in Model/Event.cs 
+- Id - Angelina
+- Title - Emil
+- StartDate (datetime) - Lachezar 
+- EndDate (datetime) - Lyubomir
+- Description - Angel 
+- Content - Dimityr
+- Organizer - Ivan
+- Duration (int) - Nikolay
+- ImagePath (string) - Alex 
+-----------------------------------------------
+
+## Homework 3.1
+- Dimitar - RegisterUser(UserModel user)
+- Ivan - UpdateUser(string city)
+- Nikolay - DeleteUser(int userId)
 
 
+- UserController -> UserService -> UserRepository
+-----------------------------------------
+
+## GIT Workflow
 1. pull master,
 2. create your branch
 3. add your changes
