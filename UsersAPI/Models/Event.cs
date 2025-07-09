@@ -10,5 +10,6 @@
 
         public string Content { get; set; }
 
+        public DateTime startDate { get; set; }
     }
 }
