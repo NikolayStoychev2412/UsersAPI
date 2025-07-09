@@ -12,6 +12,20 @@ AreaCode - Nikolay
 Phone - Alex 
 
 
+Create properties in Model/Event.cs 
+Id - Angelina
+Title - Emil
+StartDate (datetime) - Lachezar 
+EndDate (datetime) - Lyubomir
+Description - Angel 
+Content - Dimityr
+Organizer - Ivan
+Duration (int) - Nikolay
+ImagePath (string) - Alex 
+
+
+
+
 1. pull master,
 2. create your branch
 3. add your changes
