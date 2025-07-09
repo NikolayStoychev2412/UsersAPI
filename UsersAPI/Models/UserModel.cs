@@ -9,5 +9,7 @@
         public string Street { get; set; }
 
         public int StreetNumber { get; set; }
+
+        public string FirstName { get; set; }
     }
 }
