@@ -4,7 +4,7 @@
     {
         public int Id { get; set; }
 
-        string AreaCode { get; set; }
+        public string AreaCode { get; set; }
 
         public string Street { get; set; }
 

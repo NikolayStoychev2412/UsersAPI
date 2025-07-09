@@ -7,5 +7,12 @@ namespace UsersAPI.Controllers
     [ApiController]
     public class UserController : ControllerBase
     {
+        [HttpGet("DeleteUser")]
+        public ActionResult Get(int userId)
+        {
+            var service = new Service.UserService();
+            service.DeleteUser(userId);
+            return Ok();
+        }
     }
 }
