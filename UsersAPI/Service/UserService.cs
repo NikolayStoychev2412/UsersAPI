@@ -3,6 +3,12 @@ namespace UsersAPI.Service
 {
     public class UserService
     {
+        public void RegisterUser(int userId)
+        {
+            var repo = new UserRepository();
+            repo.RegisterUser(userId);
+
+        }
         public void DeleteUser(int userId)
         {
             var repository = new UserRepository();

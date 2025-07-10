@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using UsersAPI.Repository;
+using UsersAPI.Service;
 
 namespace UsersAPI.Controllers
 {
@@ -7,6 +9,14 @@ namespace UsersAPI.Controllers
     [ApiController]
     public class UserController : ControllerBase
     {
+        [HttpPost("RegisterUser")]
+        public ActionResult RegisterUser(int userId)
+        {
+            var repo = new UserRepository();
+            repo.RegisterUser(userId);
+            return Ok();
+        }
+
         [HttpDelete("DeleteUser/{userId}")]
         public ActionResult Get(int userId)
         {
