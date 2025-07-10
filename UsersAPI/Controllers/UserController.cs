@@ -12,7 +12,7 @@ namespace UsersAPI.Controllers
         [HttpPost("RegisterUser")]
         public ActionResult RegisterUser(int userId)
         {
-            var repo = new UserRepository();
+            var repo = new UserService();
             repo.RegisterUser(userId);
             return Ok();
         }
